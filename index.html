@@ -516,7 +516,7 @@
           <span class="box" style="--bg-box:var(--sage); --fg-box:var(--moss); --r:1.5deg; --d:.45s">eye.</span>
         </p>
         <p class="hero-role">Full-stack developer and computer science student at KIET Group of Institutions</p>
-        <p class="hero-intro">I build web apps end to end, from React interfaces to Node.js APIs and the database underneath.
+        <p class="hero-intro">I build web apps end to end with Next.js, React, and Python, from the interface down to the database design.
           Lately I'm exploring retrieval and agentic AI, and working toward my first research paper. I also lead creative
           direction for KIET's fashion society, so I care about how a product looks as much as how it works.</p>
         <div class="hero-actions">
@@ -605,15 +605,15 @@
         <div class="cover cover-1">
           <div class="halftone" aria-hidden="true" style="--dot:var(--violet)"></div>
           <h3><span class="t-sans">Karya</span></h3>
-          <p class="box" style="--r:-1deg">AI-powered productivity and task-management platform</p>
+          <p class="box" style="--r:-1deg">Team task-management workspace</p>
         </div>
         <div class="project-body">
           <ul class="project-points">
-            <li>Built on an MVC architecture so the codebase stays clean, scalable, and easy to maintain.</li>
-            <li>JWT-based session management and role-based access control protect user data and support multi-user task workflows.</li>
-            <li>Responsive Next.js and React interfaces backed by Node.js REST APIs for creating, updating, and tracking tasks.</li>
+            <li>Drag-and-drop Kanban boards with task assignments, priorities, and due dates keep team planning and progress in one place.</li>
+            <li>NextAuth credentials and Google OAuth sign-in with JWT sessions; team membership and role checks are enforced on the server for every task and project operation.</li>
+            <li>Relational data model in Prisma and PostgreSQL, Next.js Server Actions for task updates, and Google Calendar sync for assigned tasks and deadlines.</li>
           </ul>
-          <ul class="tags" aria-label="Tech stack"><li>Next.js</li><li>React</li><li>Node.js</li><li>Tailwind CSS</li><li>JWT</li></ul>
+          <ul class="tags" aria-label="Tech stack"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>NextAuth</li></ul>
           <p class="project-links">
             <a href="https://karya-gilt.vercel.app/" target="_blank" rel="noopener">Live site</a>
             <a href="https://github.com/saumya-st/karyaa" target="_blank" rel="noopener">Source code</a>
@@ -631,11 +631,11 @@
         </div>
         <div class="project-body">
           <ul class="project-points">
-            <li>IndexedDB caching keeps reporting working in low-connectivity areas.</li>
-            <li>Firebase Firestore syncs issue status in real time, and Supabase (PostgreSQL) handles secure media storage.</li>
-            <li>Google Gemini analyzes citizen reports and predicts issue priority, speeding up triage and resolution by authorities.</li>
+            <li>IndexedDB queues complaints during connectivity gaps and syncs them once the user is back online.</li>
+            <li>Firebase authentication and Firestore status updates, with Supabase for image storage; separate citizen, engineer, and supervisor roles across the resolution workflow.</li>
+            <li>Gemini suggests an issue priority and Leaflet maps add location context, helping authorities triage reports.</li>
           </ul>
-          <ul class="tags" aria-label="Tech stack"><li>React</li><li>Firebase Firestore</li><li>Supabase</li><li>IndexedDB</li><li>Gemini AI</li></ul>
+          <ul class="tags" aria-label="Tech stack"><li>React</li><li>Firebase</li><li>Supabase</li><li>IndexedDB</li><li>Gemini</li><li>Leaflet</li></ul>
           <p class="project-links">
             <a href="https://github.com/saumya-st/JANSEWA-PROJECT" target="_blank" rel="noopener">Source code</a>
           </p>
@@ -643,7 +643,7 @@
       </article>
 
       <article class="project">
-        <p class="hand margin-note" aria-hidden="true">50+ plans made</p>
+        <p class="hand margin-note" aria-hidden="true">tested + CI</p>
         <span class="tape" aria-hidden="true"></span>
         <div class="cover cover-3">
           <div class="halftone" aria-hidden="true" style="--dot:var(--rose)"></div>
@@ -652,11 +652,11 @@
         </div>
         <div class="project-body">
           <ul class="project-points">
-            <li>Generated 50+ personalized, time-blocked study schedules from users' productivity inputs.</li>
-            <li>Uses Llama 3.3 70B through the Groq API for real-time study recommendations and adaptive feedback.</li>
-            <li>Analytics dashboard with streak tracking and CSV export, deployed on Streamlit Cloud with SQLite persistence.</li>
+            <li>Turns subjects, priorities, and available study windows into personalized, time-blocked schedules through the Groq API.</li>
+            <li>SQLite-backed session logging and an analytics dashboard for streaks, total hours, focus trends, and CSV export, deployed on Streamlit Cloud.</li>
+            <li>Scheduling, analytics, persistence, and UI live in separate modules, with pytest coverage for analytics and database code running in GitHub Actions.</li>
           </ul>
-          <ul class="tags" aria-label="Tech stack"><li>Python</li><li>Streamlit</li><li>SQLite</li><li>Groq API</li><li>Llama 3.3</li></ul>
+          <ul class="tags" aria-label="Tech stack"><li>Python</li><li>Streamlit</li><li>SQLite</li><li>Groq API</li><li>pytest</li></ul>
           <p class="project-links">
             <a href="https://stae-study.streamlit.app/" target="_blank" rel="noopener">Live app</a>
             <a href="https://github.com/saumya-st/STUDY-ASSIS" target="_blank" rel="noopener">Source code</a>
@@ -691,13 +691,14 @@
       <svg class="paperclip" aria-hidden="true" style="right:auto; left:34px"><use href="#clip"/></svg>
       <div class="butterfly" aria-hidden="true"><svg viewBox="0 0 64 52"><use href="#butterfly"/></svg></div>
       <dl class="skill-list">
-        <div class="skill-row"><dt>Languages</dt><dd>Java, Python, JavaScript, TypeScript, C, SQL</dd></div>
-        <div class="skill-row"><dt>Frontend</dt><dd>React, Next.js, HTML5, CSS3, Tailwind CSS</dd></div>
-        <div class="skill-row"><dt>Backend</dt><dd>Node.js, Express.js, FastAPI, REST APIs, JWT authentication, MVC architecture</dd></div>
-        <div class="skill-row"><dt>AI and LLMs</dt><dd>LangChain, Retrieval-Augmented Generation (RAG), LLM APIs (Gemini, Groq), Ollama; currently exploring agentic AI</dd></div>
-        <div class="skill-row"><dt>Databases</dt><dd>MongoDB, PostgreSQL, Firebase Firestore, Supabase, SQLite, IndexedDB</dd></div>
-        <div class="skill-row"><dt>Cloud and tools</dt><dd>AWS, Docker, Git, GitHub, VS Code, Streamlit Cloud</dd></div>
-        <div class="skill-row"><dt>CS fundamentals</dt><dd>Data structures and algorithms, OOP, DBMS, operating systems</dd></div>
+        <div class="skill-row"><dt>Languages</dt><dd>Python, Java, JavaScript, TypeScript, C, C++, SQL, Bash</dd></div>
+        <div class="skill-row"><dt>Web development</dt><dd>React, Next.js, Node.js, Express.js, HTML, CSS, Tailwind CSS, REST APIs</dd></div>
+        <div class="skill-row"><dt>AI and ML</dt><dd>LangChain, LlamaIndex, RAG and Graph RAG, LangGraph, CrewAI, LangExtract, MCP, A2A protocol, LoRA and QLoRA, scikit-learn, NumPy, Pandas, PySpark, OpenCV, AutoML frameworks, n8n</dd></div>
+        <div class="skill-row"><dt>Areas</dt><dd>Machine learning, deep learning, computer vision, video and image processing, NLP, generative AI, LLM pretraining and fine-tuning</dd></div>
+        <div class="skill-row"><dt>Databases</dt><dd>SQL, PostgreSQL, Prisma, MongoDB, Firebase, Supabase, SQLite, IndexedDB, Excel</dd></div>
+        <div class="skill-row"><dt>Cloud and auth</dt><dd>AWS, Docker, Git, GitHub, Streamlit, Groq API, Gemini API, JWT, NextAuth</dd></div>
+        <div class="skill-row"><dt>CS fundamentals</dt><dd>Data structures and algorithms, OOP, DBMS, operating systems, MVC architecture</dd></div>
+        <div class="skill-row"><dt>Also familiar with</dt><dd>TensorFlow, PyTorch, JAX, Hugging Face, R</dd></div>
       </dl>
       <p class="label label-foot" aria-hidden="true">Always learning</p>
     </div>
@@ -713,7 +714,7 @@
         <span class="tape tape-sage" aria-hidden="true"></span>
         <h3>B.Tech in Computer Science</h3>
         <p class="entry-org">KIET Group of Institutions</p>
-        <p class="entry-meta"><span>2024 to 2028</span><span>CGPA 8.3 / 10</span></p>
+        <p class="entry-meta"><span>2024 to 2028 (expected)</span><span>CGPA 8.3 / 10</span></p>
         <p>Coursework in data structures and algorithms, object-oriented programming, DBMS, and operating systems.</p>
       </article>
       <article class="entry entry-lead">
@@ -721,15 +722,15 @@
         <svg class="sparkle" aria-hidden="true" style="top:22px; right:26px; --s:22px; --c:var(--blush)"><use href="#sparkle"/></svg>
         <h3>Creative Lead</h3>
         <p class="entry-org">Pragmatic Fashion Society, KIET</p>
-        <p>I lead branding, styling, and creative ideation for the society's events, which has strengthened engagement and turnout.</p>
+        <p>I lead branding, styling, and creative ideation for the society's events, keeping visual concepts and event presentation consistent across our creative work.</p>
       </article>
     </div>
-    <h3 class="certs-title">Certifications</h3>
+    <h3 class="certs-title">Certifications and training</h3>
     <ul class="certs">
-      <li class="cert" style="--bg-box:var(--lavender); --r:-1.2deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true"><use href="#heart"/></svg><div><h4>AWS Certified Cloud Practitioner</h4><p>Amazon Web Services</p></div></div></div></li>
-      <li class="cert" style="--bg-box:var(--blush); --r:1deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true" style="color:var(--navy)"><use href="#flower"/></svg><div><h4>NoSQL Databases</h4><p>Infosys</p></div></div></div></li>
-      <li class="cert" style="--bg-box:var(--butter); --r:-.8deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true"><use href="#sparkle"/></svg><div><h4>Java Spring Training</h4><p>Infosys</p></div></div></div></li>
-      <li class="cert" style="--bg-box:var(--sage); --r:1.4deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true" style="color:var(--moss)"><use href="#heart"/></svg><div><h4>Linux Fundamentals</h4><p>Red Hat Academy</p></div></div></div></li>
+      <li class="cert" style="--bg-box:var(--lavender); --r:-1.2deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true"><use href="#heart"/></svg><div><h4>AWS Certified Cloud Practitioner</h4><p>Amazon Web Services · certification</p></div></div></div></li>
+      <li class="cert" style="--bg-box:var(--blush); --r:1deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true" style="color:var(--navy)"><use href="#flower"/></svg><div><h4>NoSQL Databases</h4><p>Infosys · training</p></div></div></div></li>
+      <li class="cert" style="--bg-box:var(--butter); --r:-.8deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true"><use href="#sparkle"/></svg><div><h4>Java Spring</h4><p>Infosys · training</p></div></div></div></li>
+      <li class="cert" style="--bg-box:var(--sage); --r:1.4deg"><div class="stamp"><div class="stamp-in"><svg aria-hidden="true" style="color:var(--moss)"><use href="#heart"/></svg><div><h4>Linux Fundamentals</h4><p>Red Hat Academy · training</p></div></div></div></li>
     </ul>
   </section>
 
